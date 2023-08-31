@@ -39,10 +39,45 @@
             <div>
                 <h2>Untuk Form</h2>
                 <label for="name">Nama</label>
+                <input id="name" type="text">
+
                 <label for="tanggal_lahir">Tanggal Lahir</label>
+                <select>
+                    <optgroup label="tanggal">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </optgroup>
+                    <optgroup label="bulan">
+                        <option>Januari</option>
+                        <option>Februari</option>
+                        <option>Agustus</option>
+                        <option>Desember</option>
+                    </optgroup>
+                    <optgroup label="Tahun">
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                    </optgroup>
+                    <option selected>24/02/2023</option>
+                    <!-- <option>Seblak</option>
+                    <option>02/04/2023</option>
+                    <option selected>02/04/2023</option> -->
+                </select>
+                <br>
+
                 <label for="jenis_kelamin">Jenis Kelamin</label>
-                <label for="Pesan"></label>
-                <input type="submit" value="submit">
+                <input type="radio" id="laki" name="jenis_kelamin" value="laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="8" cols="50"></textarea>
+
+                <input type="submit" value="Submit">
             </div>
     
             <div>
